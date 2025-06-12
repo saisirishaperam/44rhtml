@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+    <div style="background-color:gray; padding:10px;">
+    <h2>State Of Andhra Pradesh Road Transportation</h2>
+    <h2>General bus Application</h2>
+    </div></center>
+    <form action="./submit.html">
+    <fieldset>
+        <legend style="background-color:rgb(0, 213, 255)"><b>Application Details</b></legend>
+    
+    <table>
+        <tr>
+            <td>
+            <label for="name">Name*</label>
+            <input type="text" id="name" maxlength="20" required><br>
+            </td>
+            <td>
+                <label for="name">Father/Guadrians Name*</label>
+                <input type="text">
+            </td>
+        <tr>
+            <td>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" max="2025-05-30" required>
+        </td>
+            <td>Gender*<br>
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Male</td>
+        </tr>
+        <tr>
+            <td>Age As On:<br>
+                <input type="text" size="1">year(s)
+                <input type="text" size="1">month(s)
+                <input type="text" size="1">day(s)
+            </td>
+            <td>Aadhaar No*:
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>WhatsApp No*:
+                <input type="text" maxlength="10">
+            </td>
+            <td>Email*:
+                <input type="email">
+            </td>
+        </tr>
+        <tr>
+            <td>Photo*:
+                <input type="file">
+            </td>
+        </tr>
+    </table>
+    </form>
+    </fieldset>
+    <fieldset>
+        <legend style="background-color:rgb(0, 221, 255)">Residential Details</legend>
+        <form>
+            <table>
+                <tr>
+                    <td>Applicant's Address*:
+                        <textarea placeholder="Enter Address"></textarea>
+                    </td>
+                    <td>State*:<br>
+                        <label for="state">Select Your State</label>
+                        <select name="state" id="state" required>
+                            <option value="">---Select State---</option>
+                            <option value="HYDERABAD">HYDERABAD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>District*:
+                        <label for="state"></label>
+                        <select name="state" id="state" required>
+                            <option value="">-----Select------</option>
+                            <option value="HYDERABAD">HYDERABAD</option>
+                        </select>
+                    </td>
+                    <td>Mandal*:
+                        <label for="mandal"></label>
+                        <select name="mandal" id="mandal" required>
+                            <option value="">------Select------</option>
+                            <option value="HYDERABAD">HYDERABAD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pin Code*:
+                        <input type="number" placeholder="Enter pincode" required>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend style="background-color:rgb(0, 195, 255)">Pass Type Address</legend>
+        <table>
+            <tr>
+                <td>City*:
+                        <label for="city"></label>
+                        <select name="city" id="city" required>
+                            <option value="">------Select------</option>
+                            <option value="HYDERABAD">HYDERABAD</option>
+                            <option value="Andhra">Andhra</option>
+                            <option value="TamilNadu">TamilNadu</option>
+                            <option value="Karanataka">Karanataka</option>
+                            <option value="Kerala">Kerala</option>
+                        </select>
+                    </td>
+            </tr>
+            <tr>
+                <td>Pass Type*:
+                    <label for="type"></label>
+                    <select name="type" id="type" required>
+                        <option value="">------Select------</option>
+                        <option value="Generate pass">Genarate pass</option>
+                        <option value="Metro Express Pass">Metro Express Pass</option>
+                        <option value="Metro delux Pass">Metro delux Pass</option>
+                        <option value="Ordinary Pass">Ordinary Pass</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend style="background-color:rgb(0, 204, 255)">Mode of Payment & Pass collection</legend>
+        <form>
+        <table>
+            <tr>
+                <td>Payment Mode*
+                    <label for="mode"></label>
+                    <select name="mode" id="mode" required>
+                        <option value="">------Select------</option>
+                        <option value="Payment At counter">Payment At counter</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pass Delivery Mode*
+                    <label for="mode"></label>
+                    <select name="mode" id="mode" required>
+                        <option value="">------Select------</option>
+                        <option value="At counter">At counter</option>
+                    </select>
+                </td>
+            </tr>
+            
+        </table>
+        </fieldset>
+        <center>
+    <input type="submit">
+    <input type="reset"></center>
+        </form>
+</body>
+</html>
